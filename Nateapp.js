@@ -22,15 +22,21 @@ const Noteapp = () => {
   }
 
 
+
+
   const deletenote = (id) => {
-        
+    console.log(id)
     setitems(
-      (old)=>{
-             old.filter((cur,ind)=>{
-               return id !== ind ;
-             })
+      (olddata) => {
+
+        return olddata.filter((arrele, index) => {
+
+          return index !== id;
+        })
+
       }
-    );
+    )
+
 
   }
 
@@ -40,19 +46,29 @@ const Noteapp = () => {
       <Createnote
         Fun={showlargedata}
       />
-      {
-        items.map((elem, index) => {
-             return <Note
-              key={index}
-              index={index}
-              title={elem.title}
-              dis={elem.dis}
-              delete={deletenote}
-            />;
-          }
+      <div className="Notes-div">
+        {
 
-      )
-      }
+
+          items.map(
+            (elem, index) => {
+
+               
+                return <Note
+                key={index}
+                id={index}
+                title={elem.title}
+                dis={elem.dis}
+                delete={deletenote}
+              />;
+              
+
+            }
+          )
+
+        }
+
+      </div>
 
       <Footer />
 

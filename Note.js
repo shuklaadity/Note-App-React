@@ -9,9 +9,10 @@ const Note =(props)=>{
     return(
         <>
            <div className="Note">
+           <button onClick={notedelete}><i class="fa-solid fa-trash"></i></button>
                <h3>{props.title}</h3>
                <p> {props.dis} </p>
-               <button onClick={notedelete}>Delete</button>
+               
            </div>
         </>
     )

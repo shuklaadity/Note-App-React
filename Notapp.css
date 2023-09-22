@@ -8,30 +8,32 @@
     height: 80px;
     position: absolute;
     top: 0px;
-    background-color: rgb(14, 14, 40);
+    background-color: rgba(15, 37, 231, 0.861);
 }
 .nav-div h2{
     color: white;
-   
+    font-size: 1.5rem;
     margin-top: 20px;
     margin-left: 40px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .Createnote{
-    width: 40%;
-    height: 250px;
-    padding: 30px;
+    width: 20rem;
+    height: 200px;
+    overflow: hidden;
     margin: auto;
+    margin-top: 100px;
+    border-radius: 20px;
     background-color: rgb(14, 14, 40);
-    position: absolute;
-    top: 100px;
-    border-radius: 25px;
+   
+   
 }
+
 .Createnote form{
     width: 100%;
     height: 200px;
-
+    border-radius: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -41,41 +43,94 @@
     background-color: rgb(14, 14, 40);
 }
 .Createnote form textarea{
-    width: 80%;
+    width: 17rem;
     height: 80px;
-    margin: auto;
-    background-color: rgb(240, 235, 235);
+   
+   
     border-radius: 25px;
     text-align: center;
     font-size: 20px;
 }
 .Createnote form input{
-    width: 80%;
+    width: 17rem;
     height: 40px;
     border: 0;
     outline: 0;
     border-radius: 25px;
     text-align: center;
-    font-size: 20px;
+    font-size: 17px;
+}
+.Createnote  button{
+    width: 50px;
+    height: 30px;
+    font-size: 24px;
+    border: 0;
+    outline: 0;
+    color:red ;
+    border-radius: 3px;
+}
+.Createnote button:hover{
+    background-color: greenyellow;
+    color: black;
 }
 
 .Note{
-    width: 20%;
-    height:80px;
+    width: 15rem;
+    height:150px;
     background-color: rgb(14, 14, 40);
-    padding: 20px;
+    
     color: white;
-   
+    border-radius: 10px;
+    
     font-family: Arial, Helvetica, sans-serif;
-    margin-top: 220px;
+}
+.Note h3{
+    width: 80%;
+    margin: auto;
+    word-spacing: 3px;
+}
+.Note p{
+    width: 80%;
+    margin: auto;
+    margin-top: 10px;
+    font-size: 14px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.Note button{
+   margin: 13px;
+   font-size: 17px;
+   color:orangered;
+   
+}
+.Note button :hover{
+    color: greenyellow;
+}
+.Notes-div{
+
+    width: 100%;
+    
+   
+   
+    padding: 40px;
+    display: flex;
+    
+    flex-flow: wrap;
+    align-content: flex-start;
+   
+    gap: 3rem;
+    
+    
+    
 }
 
 .Footer{
     width: 100%;
     height: 30px;
-    background-color: antiquewhite;
-    position:absolute;
-    bottom: 0px;
-    font-size: 20px;
+    
+    
+    background-color: rgba(15, 37, 231, 0.861);
+    color: white;
+    font-size: 17px;
     text-align: center;
+    
 }

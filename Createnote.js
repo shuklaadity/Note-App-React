@@ -47,29 +47,30 @@ const Createnote =( props)=>{
        
     }
 
+    const discription="dis ";
+
     return(
         <>
            <div className="Createnote">
                 <form onSubmit={onsubmit}>
                     <input  
                     type="text" 
-                    placeholder="Title"  
                     name="title"
-                    autoCapitalize="off"
                     onChange={inputvalue}
-
                     value={Note.title}
+                    placeholder="Title"
                     
                     />
                     <textarea 
                     rows="" 
                     column="" 
-                    placeholder="Add discription" 
+                    
                     name="dis"
                     onChange={inputvalue}
                     value={Note.dis}
+                     placeholder="Discription...p"
                     />
-                    <button onClick={showdata}> Add note</button>
+                    <button onClick={showdata}><i class="fa-solid fa-plus"></i> </button>
                 </form>
            </div>
         </>
